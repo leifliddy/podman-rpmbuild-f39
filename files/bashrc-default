@@ -1,0 +1,16 @@
+alias vi='vim'
+alias sourceit='source ~/.bashrc'
+
+findit() {
+  find . -type f | xargs grep $1
+}
+
+removetrailingwhitespace() {
+   for file in $@; do
+     sed -i 's/[ \t]*$//' "$file"
+   done
+}
+
+wp() {
+   dnf whatprovides "*$1*"
+}
