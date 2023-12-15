@@ -3,7 +3,7 @@ creates a package build environment for Fedora
 
 **Fedora Package install**  
 ```
-dnf install podman python3-podman python3-termcolor
+dnf install podman python3-podman python3-rich python3-termcolor
 ```
 
 **build container and login to it**  
