@@ -22,8 +22,8 @@ def create_mounts_dict(host_mount, container_mount, read_only=False, selinux_lab
 cur_dir                 = os.path.dirname(os.path.realpath(__file__))
 bind_volumes            = []
 
-image_name              = 'rpm_build_env:f38'
-container_name          = 'rpm_builder_f38'
+image_name              = 'rpm_build_env:f39'
+container_name          = 'rpm_builder_f39'
 container_hostname      = 'rpm_builder'
 #container_script        = '/root/scripts/01-build.rpm.sh'
 
