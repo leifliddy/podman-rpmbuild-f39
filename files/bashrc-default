@@ -1,5 +1,6 @@
 alias vi='vim'
 alias sourceit='source ~/.bashrc'
+alias gooutput='cd /output_rpm'
 
 findit() {
   find . -type f | xargs grep $1
