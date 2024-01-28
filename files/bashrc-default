@@ -15,3 +15,16 @@ removetrailingwhitespace() {
 wp() {
    dnf whatprovides "*$1*"
 }
+
+pp() {
+   rpm -qf $(which $1)
+}
+
+qq() {
+   rpm -qa | grep $1
+}
+
+dls() {
+   name=$(echo $1 | sed 's/-[^-]*-[^-]*\.[^.]*\.[^.]*$//')
+   dnf download --source $name
+}
